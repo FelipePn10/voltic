@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/voltic.iml" filepath="$PROJECT_DIR$/.idea/voltic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/voltic/.idea/voltic.iml" filepath="$PROJECT_DIR$/voltic/.idea/voltic.iml" />
     </modules>
   </component>
 </project>
