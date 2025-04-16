@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="671a50d5-491b-4af0-9901-7a4f49cfcaf0" name="Changes" comment="feat: rabbitmq queue creation and configuration">
-      <change afterPath="$PROJECT_DIR$/voltic/src/main/java/com/challenge/btg/voltic/entity/OrderEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/voltic/src/main/java/com/challenge/btg/voltic/entity/OrderItem.java" afterDir="false" />
+    <list default="true" id="671a50d5-491b-4af0-9901-7a4f49cfcaf0" name="Changes" comment="feat: Entity mapping">
+      <change afterPath="$PROJECT_DIR$/voltic/src/main/java/com/challenge/btg/voltic/dto/OrderCreatedDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/voltic/src/main/java/com/challenge/btg/voltic/dto/OrderItemRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/voltic/src/main/java/com/challenge/btg/voltic/listener/OrderCreated_listener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voltic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/voltic/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voltic/src/main/java/com/challenge/btg/voltic/config/RabbitMqConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/voltic/src/main/java/com/challenge/btg/voltic/config/RabbitMqConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Record" />
       </list>
     </option>
   </component>
@@ -46,32 +51,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.VolticApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "go.import.settings.migrated": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Panosso/projetos/backend/java/voltic",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.VolticApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Panosso/projetos/backend/java/voltic&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Panosso\projetos\backend\java\voltic\voltic" />
@@ -103,7 +108,8 @@
       <option name="presentableId" value="Default" />
       <updated>1744722230655</updated>
       <workItem from="1744722231836" duration="1248000" />
-      <workItem from="1744723500776" duration="872000" />
+      <workItem from="1744723500776" duration="3851000" />
+      <workItem from="1744802343717" duration="1520000" />
     </task>
     <task id="LOCAL-00001" summary="feat: docker and rabbitmq configuration">
       <option name="closed" value="true" />
@@ -129,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744723768178</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: Entity mapping">
+      <option name="closed" value="true" />
+      <created>1744724671728</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1744724671728</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,7 +153,8 @@
     <MESSAGE value="feat: docker and rabbitmq configuration" />
     <MESSAGE value="feat: Spring boot communication with mongodb" />
     <MESSAGE value="feat: rabbitmq queue creation and configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: rabbitmq queue creation and configuration" />
+    <MESSAGE value="feat: Entity mapping" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Entity mapping" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
