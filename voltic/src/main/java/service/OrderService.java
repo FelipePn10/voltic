@@ -1,9 +1,12 @@
 package service;
 
+import com.challenge.btg.voltic.controller.dto.OrderResponse;
 import com.challenge.btg.voltic.dto.OrderCreatedDTO;
 import com.challenge.btg.voltic.entity.OrderEntity;
 import com.challenge.btg.voltic.entity.OrderItem;
 import com.challenge.btg.voltic.repository.OrderRepository;
+import org.springframework.core.annotation.Order;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -29,6 +32,12 @@ public class OrderService {
         entity.setTotalprice(getTotalPrice(event));
         orderRepository.save(entity);
 
+    }
+
+    public Page<OrderResponse> findAllByCustomerId(Long customerId, PageRequest pageRequest) {
+        var orders = orderRepository.findAllByCustomerId(customerId, pageRequest);
+
+        return orders.map(OrderResponse::fromOrderEntity);
     }
 
     private BigDecimal getTotalPrice(OrderCreatedDTO event) {

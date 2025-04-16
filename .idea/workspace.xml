@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="671a50d5-491b-4af0-9901-7a4f49cfcaf0" name="Changes" comment="feat: create implementation for saving to Mongo database and test the flow">
-      <change afterPath="$PROJECT_DIR$/voltic/src/main/java/com/challenge/btg/voltic/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/voltic/src/main/java/com/challenge/btg/voltic/controller/dto/ApiResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/voltic/src/main/java/com/challenge/btg/voltic/controller/dto/OrderResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/voltic/src/main/java/com/challenge/btg/voltic/controller/dto/PaginationResponse.java" afterDir="false" />
+    <list default="true" id="671a50d5-491b-4af0-9901-7a4f49cfcaf0" name="Changes" comment="feat: create the return dto endpoint">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voltic/src/main/java/com/challenge/btg/voltic/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/voltic/src/main/java/com/challenge/btg/voltic/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voltic/src/main/java/com/challenge/btg/voltic/controller/dto/OrderResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/voltic/src/main/java/com/challenge/btg/voltic/controller/dto/OrderResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voltic/src/main/java/com/challenge/btg/voltic/controller/dto/PaginationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/voltic/src/main/java/com/challenge/btg/voltic/controller/dto/PaginationResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voltic/src/main/java/com/challenge/btg/voltic/repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/voltic/src/main/java/com/challenge/btg/voltic/repository/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voltic/src/main/java/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/voltic/src/main/java/service/OrderService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +79,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.challenge.btg.voltic.controller.dto" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Panosso\projetos\backend\java\voltic\voltic" />
     </key>
@@ -109,7 +113,7 @@
       <updated>1744722230655</updated>
       <workItem from="1744722231836" duration="1248000" />
       <workItem from="1744723500776" duration="3851000" />
-      <workItem from="1744802343717" duration="3613000" />
+      <workItem from="1744802343717" duration="4216000" />
     </task>
     <task id="LOCAL-00001" summary="feat: docker and rabbitmq configuration">
       <option name="closed" value="true" />
@@ -159,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744805477315</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat: create the return dto endpoint">
+      <option name="closed" value="true" />
+      <created>1744806065231</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1744806065231</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,7 +184,8 @@
     <MESSAGE value="feat: Entity mapping" />
     <MESSAGE value="feat: created listener and DTO" />
     <MESSAGE value="feat: create implementation for saving to Mongo database and test the flow" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: create implementation for saving to Mongo database and test the flow" />
+    <MESSAGE value="feat: create the return dto endpoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: create the return dto endpoint" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
