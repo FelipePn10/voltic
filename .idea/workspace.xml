@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="671a50d5-491b-4af0-9901-7a4f49cfcaf0" name="Changes" comment="feat: Entity mapping">
-      <change afterPath="$PROJECT_DIR$/voltic/src/main/java/com/challenge/btg/voltic/dto/OrderCreatedDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/voltic/src/main/java/com/challenge/btg/voltic/dto/OrderItemRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/voltic/src/main/java/com/challenge/btg/voltic/listener/OrderCreated_listener.java" afterDir="false" />
+    <list default="true" id="671a50d5-491b-4af0-9901-7a4f49cfcaf0" name="Changes" comment="feat: created listener and DTO">
+      <change afterPath="$PROJECT_DIR$/voltic/src/main/java/com/challenge/btg/voltic/repository/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/voltic/src/main/java/service/OrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voltic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/voltic/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voltic/src/main/java/com/challenge/btg/voltic/config/RabbitMqConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/voltic/src/main/java/com/challenge/btg/voltic/config/RabbitMqConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voltic/src/main/java/com/challenge/btg/voltic/entity/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/voltic/src/main/java/com/challenge/btg/voltic/entity/OrderItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voltic/src/main/java/com/challenge/btg/voltic/listener/OrderCreated_listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/voltic/src/main/java/com/challenge/btg/voltic/listener/OrderCreated_listener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +19,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Record" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -109,7 +109,7 @@
       <updated>1744722230655</updated>
       <workItem from="1744722231836" duration="1248000" />
       <workItem from="1744723500776" duration="3851000" />
-      <workItem from="1744802343717" duration="1520000" />
+      <workItem from="1744802343717" duration="2992000" />
     </task>
     <task id="LOCAL-00001" summary="feat: docker and rabbitmq configuration">
       <option name="closed" value="true" />
@@ -143,7 +143,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744724671728</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat: created listener and DTO">
+      <option name="closed" value="true" />
+      <created>1744803888711</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1744803888711</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,7 +162,8 @@
     <MESSAGE value="feat: Spring boot communication with mongodb" />
     <MESSAGE value="feat: rabbitmq queue creation and configuration" />
     <MESSAGE value="feat: Entity mapping" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Entity mapping" />
+    <MESSAGE value="feat: created listener and DTO" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: created listener and DTO" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

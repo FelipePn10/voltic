@@ -13,7 +13,10 @@ public class OrderItem {
     private BigDecimal price;
 
     //--------------------------------------------//
-    public OrderItem() {
+    public OrderItem(String productName, Integer quantity, BigDecimal price) {
+        this.productName = productName;
+        this.quantity = quantity;
+        this.price = price;
 
     }
 
